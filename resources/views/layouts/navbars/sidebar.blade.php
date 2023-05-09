@@ -4,6 +4,53 @@
             <a href="#" class="simple-text logo-mini">{{ __('') }}</a>
             <a href="#" class="simple-text logo-normal">{{ __('Administración') }}</a>
         </div>
+        <ul class="nav">
+            {{--  <li @if ($pageSlug == 'dashboard') class="active " @endif>  --}}
+                <a href="{{ route('home') }}">
+                    <i class="tim-icons icon-chart-pie-36"></i>
+                    <p>{{ __('Dashboard') }}</p>
+                </a>
+            </li>
+            {{--  <li @if ($pageSlug == 'users') class="active " @endif>
+                <a href="{{ route('users') }}">
+                    <i class="tim-icons icon-single-02"></i>
+                    <p>{{ __('Usuarios') }}</p>
+                </a>
+            </li>  --}}
+            <li >
+                <a href="{{ route('equipments') }}">
+                    <i class="tim-icons icon-tv-2"></i>
+                    <p>{{ __('Equipos') }}</p>
+                </a>
+            </li>
+            <li >
+                <a href="{{ route('keyboards') }}">
+                    <i class="tim-icons icon-credit-card"></i>
+                    <p>{{ __('Teclados') }}</p>
+                </a>
+            </li>
+            <li >
+                <a href="{{ route('monitors') }}">
+                    <i class="tim-icons icon-laptop"></i>
+                    <p>{{ __('Monitor') }}</p>
+                </a>
+            </li>
+            <li >
+                <a href="{{ route('mouses') }}">
+                    <i class="tim-icons icon-controller"></i>
+                    <p>{{ __('Mouse') }}</p>
+                </a>
+            </li>
+            <li >
+                <a href="{{ route('ordenadores') }}">
+                    <i class="tim-icons icon-mobile"></i>
+                    <p>{{ __('Ordenador') }}</p>
+                </a>
+            </li>
+
+        </ul>
+
+
         {{--  <ul class="nav">
             <li @if ($pageSlug == 'dashboard') class="active " @endif>
                 <a href="{{ route('home') }}">

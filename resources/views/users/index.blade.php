@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{--  <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="UTF-8">
@@ -528,4 +528,4 @@
     <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=111649226022273&ev=PageView&noscript=1" />
     </noscript>
 </body>
-</html>
+</html>  --}}

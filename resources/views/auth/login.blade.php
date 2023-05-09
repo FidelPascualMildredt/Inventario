@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+
+<img src="../../../public/black/img/2cbt.jpeg" alt="">
     <div class="col-md-10 text-center ml-auto mr-auto">
         <h3 class="mb-5">Inicio de sesión</h3>
     </div>

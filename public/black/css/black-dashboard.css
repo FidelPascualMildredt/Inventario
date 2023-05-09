@@ -94,8 +94,10 @@ body {
   line-height: 1.5;
   color: #525f7f;
   text-align: left;
-  background-color: #1e1e2f;
+  background-image: url('../../black/img/2cbt.jpeg');
+  background-color: rgba(0, 0, 0, 0.5); /* Cambia el último valor (0.5) para ajustar la opacidad */
 }
+
 
 [tabindex="-1"]:focus {
   outline: 0 !important;

@@ -1,6 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\EquipmentController;
+use App\Http\Controllers\KeyboardController;
+use App\Http\Controllers\MonitorController;
+use App\Http\Controllers\MouseController;
+use App\Http\Controllers\OrdenadorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,3 +48,18 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'App\Http\Controllers\ProfileController@password']);
 });
 
+ // Rutas de panel administrativo
+//  Route::resource('equipments',EquipmentController::class);
+ Route::get('/equipments', [App\Http\Controllers\EquipmentController::class, 'index'])->name('equipments');
+ Route::get('/keyboards', [App\Http\Controllers\KeyboardController::class, 'index'])->name('keyboards');
+ Route::get('/monitors', [App\Http\Controllers\MonitorController::class, 'index'])->name('monitors');
+ Route::get('/mouses', [App\Http\Controllers\MouseController::class, 'index'])->name('mouses');
+ Route::get('/ordenadores', [App\Http\Controllers\OrdenadorController::class, 'index'])->name('ordenadores');
+
+ Route::resource('users',UserController::class);
+//  Route::resource('keyboards',KeyboardController::class);
+//  Route::resource('monitors',MonitorController::class);
+//  Route::resource('mouses',MouseController::class);
+//  Route::resource('ordenadores',OrdenadorController::class);
+
+// Route::resource('equipments',EquipmentController::class);
